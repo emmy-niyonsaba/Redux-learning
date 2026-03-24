@@ -14,7 +14,7 @@ function Todos() {
     
         <ul>
 
-      {todos ? (
+      {todos && todos.length > 0 ? (
             todos.map((todo,index) => (
                 <li key={index}>
                 <div>
