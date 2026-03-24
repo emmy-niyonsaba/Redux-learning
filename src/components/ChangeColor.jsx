@@ -16,7 +16,7 @@ function ChangeColor() {
             </select>
             <button onClick={() => {
                 alert(`Color changed to ${color}`)
-                return dispatch(Change({ value: color ,isColorChanged: true}))
+                return dispatch(Change(color))
             }
             }
             >Change Color</button>

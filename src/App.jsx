@@ -6,14 +6,17 @@ import './App.css'
 import Profile from './components/Profile'
 import Login from './components/Login'
 import ChangeColor from './components/ChangeColor'
-import { useSelector } from 'react-redux'
+// import { useSelector } from 'react-redux'
+import todosReducer from './features/todos'
 
 
 
   const store = configureStore({
     reducer: {
       user: userReducer,
-      theme: themeReducer
+      theme: themeReducer,
+      todos: todosReducer
+
     }
   })
 function App() {
